@@ -1,0 +1,376 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Poppins-Regular, sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+/*---------------------------------------------*/
+
+input {
+  outline: none;
+  border: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+input:-moz-placeholder {
+  color: #adadad;
+}
+
+input::-moz-placeholder {
+  color: #adadad;
+}
+
+input:-ms-input-placeholder {
+  color: #adadad;
+}
+
+/*---------------------------------------------*/
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+iframe {
+  border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ register ]*/
+
+.popup-register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(187, 233, 240);
+}
+
+.popup-register .register {
+  border: 1px solid #14BBD4;
+  background: white;
+  padding: 0;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-register100 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.wrap-register100 {
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/*------------------------------------------------------------------
+[ Form ]*/
+
+.register100-form {
+  width: 100%;
+}
+
+.register100-form-title, .register100-form-sub-title, .input-information-text {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 30px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+}
+
+.register100-form-title {
+  background: #3F51B5;
+  color: white;
+  padding: 20px 0;
+  margin: -15px;
+}
+
+.register100-form-sub-title, .input-information-text {
+  font-size: 25px;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #5a5959;
+  font-weight: normal;
+}
+
+.input-information-text {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  margin: 0 22px;
+}
+
+.wrap-input100 .title {
+  text-align: right;
+}
+
+.wrap-input100 .title span {
+  line-height: 4;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.border {
+  border: 1px solid #dadada;
+}
+
+.wrap-input100 i {
+  color: #9b9898;
+  line-height: 3.4;
+  text-align: center;
+  height: 30px;
+}
+
+.register .label-input {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+  padding-left: 7px;
+}
+
+.register input {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #3F51B5;
+  line-height: 1.2;
+  height: 48px;
+  background: transparent;
+  padding: 0 7px 0 7px;
+}
+
+.error {
+  position: absolute;
+}
+
+
+/*---------------------------------------------*/
+
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::after {
+  content: attr(data-symbol);
+  font-family: Material-Design-Iconic-Font;
+  color: #adadad;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: calc(100% - 20px);
+  bottom: 0;
+  left: 0;
+  padding-left: 13px;
+  padding-top: 3px;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #7f7f7f;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.has-val.input100+.focus-input100::before {
+  width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+.container-register100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  justify-content: center;
+}
+
+.wrap-register100-form-btn {
+  display: flex;
+  border-radius: 2px;
+}
+
+.register100-form-btn {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  line-height: 1.2;
+  background: #3F51B5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-right: 20px;
+  border-radius: 3px;
+  height: 50px;
+}
+
+.wrap-register100-form-btn:hover .register100-form-bgbtn {
+  left: 0;
+}
+
+.remember-register {
+  display: flex;
+  justify-content: center;
+}
+
+.remember-register input {
+  width: 22px;
+  margin-top: 6px;
+}
+
+.remember-register span {
+  line-height: 4;
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.remember-register .title {
+  margin-right: 10px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+  .wrap-register100 {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ common-css ]*/
+
+.float-right {
+  float: right;
+}
+
+.p-b-49 {
+  padding-bottom: 49px;
+}
+
+.m-b-15 {
+  margin-bottom: 15px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-l-7 {
+  margin-left: -7px !important;
+}
+
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-b-49 {
+  margin-bottom: 49px;
+}
+
+.w-49-p {
+  width: 49%;
+}
+
+.m-l-15 {
+  margin-left: 15px;
+}
+
+.color-red {
+  color: red;
+}

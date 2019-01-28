@@ -1,0 +1,56 @@
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: white;
+  color: black;
+  overflow: hidden;
+}
+
+.row {
+  margin: 5px 0;
+}
+
+.popup-search-filter {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+}
+
+.popup-search-filter .filter-date {
+  border-right: 2px solid black;
+}
+
+.popup-search-filter .title-filter-date {
+  margin: 10px 0;
+}
+
+.popup-search-filter .title-filter-date h4 {
+  color: #14BBD4;
+  font-weight: bold;
+}
+
+.popup-search-filter .title span {
+  font-weight: 500;
+}
+
+.popup-search-filter .text-date span {
+  font-weight: 500;
+}
+
+.popup-search-filter .filter-nation {
+  border: 1px solid black;
+  overflow: auto;
+  height: 300px;
+}
+
+.v-h-16 {
+  width: 16.67vh;
+}
