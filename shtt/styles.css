@@ -1037,6 +1037,11 @@ h6 {
     font-weight: 500;
     padding: 10px 25px;
     cursor: pointer;
+    display: flex;
+}
+
+.chart-content .invent-trend p input {
+    margin-right: 10px;
 }
 
 .chart-content .invent-trend .title {
