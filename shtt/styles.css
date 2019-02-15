@@ -36,6 +36,10 @@ h6 {
     z-index: 1;
 }
 
+.header-no-full-menu {
+    margin-left: 100px;
+}
+
 .header .content-header-left {
     padding: 20px 55px;
 }
@@ -77,7 +81,7 @@ h6 {
 /* HEADER */
 
 
-/* MENU */
+/* FULL MENU */
 
 .menu {
     display: flex;
@@ -158,11 +162,101 @@ h6 {
 }
 
 
+/* NO FULL MENU */
+
+.menu-no-full {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background: #2A3F54;
+    z-index: 999;
+    color: white;
+    overflow: auto;
+}
+
+.menu-no-full .text-logo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px 0 45px;
+}
+
+.menu-no-full .menu-content {
+    flex-grow: 1;
+}
+
+.menu-no-full .menu-content .menu-parent-title {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.menu-no-full .menu-content .menu-parent-title h4 {
+    font-size: 14px;
+}
+
+.menu-no-full .menu-content .menu-parent:nth-child(1) {
+    margin-bottom: 56px;
+}
+
+.menu-no-full .menu-content .menu-parent .menu-child .menu-child-item i {
+    font-size: 14px;
+    width: 20px;
+}
+
+.menu-no-full .menu-content .menu-parent .menu-child .menu-child-item a {
+    padding: 15px;
+    color: #959FAA;
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-no-full .menu-content .menu-parent .menu-child .menu-child-item a:hover {
+    text-decoration: unset;
+}
+
+.menu-no-full .menu-content .menu-parent .menu-child .menu-child-item:hover {
+    background: #162D44;
+}
+
+.menu-no-full .menu-content .menu-parent .menu-child .active {
+    background: #1890FF;
+}
+
+.menu-no-full .menu-content .menu-parent .menu-child .active a {
+    color: white;
+}
+
+.menu-no-full .menu-footer {
+    background: #162D44;
+    margin-left: 0;
+}
+
+.menu-no-full .menu-footer div {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.menu-no-full .menu-content .menu-footer i {
+    color: white;
+}
+
+
 /* CONTENT  - SEARCH PAGE*/
 
 .search-page {
     margin-left: 300px;
     margin-top: 100px;
+}
+
+.layout-no-full-menu {
+    margin-left: 100px;
 }
 
 .search-page .box-search {
@@ -682,6 +776,10 @@ h6 {
 
 .pagination-bottom .pagination-number span {
     font-weight: bold;
+}
+
+.pagination-no-full-menu {
+    left: 100px;
 }
 
 
@@ -1254,6 +1352,10 @@ h6 {
 
 .m-l-10 {
     margin-left: 10px;
+}
+
+.m-l-0 {
+    margin-left: 0px;
 }
 
 .b-b-unset {
